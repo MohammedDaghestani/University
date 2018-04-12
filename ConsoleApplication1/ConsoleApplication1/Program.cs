@@ -16,16 +16,18 @@ namespace ConsoleApplication1
             Console.WriteLine("Inter number of cloumns : ");
             int m = Convert.ToInt32(Console.ReadLine());
             int[,] a = new int[n, m];
-            Console.WriteLine("Inter the items of array : ");
+            
             for (int i = 0; i < a.GetLength(0); i++)
             {
                 for (int j = 0; j < a.GetLength(1); j++)
                 {
+                    Console.WriteLine("Inter the items a[{0},{1}] of array : ", i,j);
                     a[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
             Console.WriteLine();
 
+            Console.WriteLine("You array is : \n");
             for (int i = 0; i < a.GetLength(0); i++)
             {
                 for (int j = 0; j < a.GetLength(1); j++)
@@ -37,7 +39,7 @@ namespace ConsoleApplication1
             Console.WriteLine();
 
             // this code to print odd column 
-
+            Console.WriteLine("Columns with odd numbers : \n");
             for (int i = 0; i < a.GetLength(0); i++)
             {
                 for (int j = 0; j < a.GetLength(1); j++)
@@ -49,6 +51,8 @@ namespace ConsoleApplication1
             }
             Console.WriteLine();
 
+
+            Console.WriteLine("The lines after sum : \n");
             int[] b = new int[n];
             for (int i = 0; i < b.Length; i++)
             {
