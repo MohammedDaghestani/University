@@ -165,18 +165,44 @@ namespace ConsoleApplication1
 
             //range for result
 
-            Console.WriteLine("Please write your score here : ");
+            //Console.WriteLine("Please write your score here : ");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //if (x < 55)
+            //    Console.WriteLine("Failed");
+            //else if (x < 65)
+            //    Console.WriteLine("Accepted");
+            //else if (x < 75)
+            //    Console.WriteLine("Good");
+            //else if (x < 85)
+            //    Console.WriteLine("Very Good");
+            //else if (x < 95)
+            //    Console.WriteLine("Oner");
+
+
+            // The prime number
+
+            Console.WriteLine("Please inter a number");
             int x = Convert.ToInt32(Console.ReadLine());
-            if (x < 55)
-                Console.WriteLine("Failed");
-            else if (x < 65)
-                Console.WriteLine("Accepted");
-            else if (x < 75)
-                Console.WriteLine("Good");
-            else if (x < 85)
-                Console.WriteLine("Very Good");
-            else if (x < 95)
-                Console.WriteLine("Oner");
+            int f = x - 1;
+            for (int i = 2; i < x; i++)
+            {
+                if (x % i != 0)
+                {
+                    if (i == f)
+                    {
+                        Console.WriteLine("The Number you intered is prime");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("The number you intered is not Prime");
+                    break;
+                }
+            }
+
+
+
+
 
         }
     }
