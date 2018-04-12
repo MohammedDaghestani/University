@@ -181,26 +181,43 @@ namespace ConsoleApplication1
 
             // The prime number
 
-            Console.WriteLine("Please inter a number");
+            //Console.WriteLine("Please inter a number");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //int f = x - 1;
+            //for (int i = 2; i < x; i++)
+            //{
+            //    if (x % i != 0)
+            //    {
+            //        if (i == f)
+            //        {
+            //            Console.WriteLine("The Number you intered is prime");
+            //        }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The number you intered is not Prime");
+            //        break;
+            //    }
+            //}
+
+
+
+            // Test the max number
+
+            Console.WriteLine("Inter The first number");
             int x = Convert.ToInt32(Console.ReadLine());
-            int f = x - 1;
-            for (int i = 2; i < x; i++)
-            {
-                if (x % i != 0)
-                {
-                    if (i == f)
-                    {
-                        Console.WriteLine("The Number you intered is prime");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("The number you intered is not Prime");
-                    break;
-                }
-            }
-
-
+            Console.WriteLine("Inter the second number");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Inter the therd number");
+            int z = Convert.ToInt32(Console.ReadLine());
+            int max;
+            if (x > y)
+                max = x;
+            else
+                max = y;
+            if (z > max)
+                max = z;
+            Console.WriteLine("The maximum Number is: " + max);
 
 
 
