@@ -16,12 +16,12 @@ namespace ConsoleApplication1
             Console.WriteLine("Inter number of cloumns : ");
             int m = Convert.ToInt32(Console.ReadLine());
             int[,] a = new int[n, m];
-            
+
             for (int i = 0; i < a.GetLength(0); i++)
             {
                 for (int j = 0; j < a.GetLength(1); j++)
                 {
-                    Console.WriteLine("Inter the items a[{0},{1}] of array : ", i,j);
+                    Console.WriteLine("Inter the items a[{0},{1}] of array : ", i, j);
                     a[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
@@ -89,7 +89,7 @@ namespace ConsoleApplication1
                 for (int j = 0; j < a.GetLength(1); j++)
                 {
                     if (i < j)
-                        Console.Write(a[i, j]+"\t");
+                        Console.Write(a[i, j] + "\t");
                     else
                         Console.Write("\t");
                 }
@@ -111,7 +111,17 @@ namespace ConsoleApplication1
                 }
                 Console.WriteLine("\n");
             }
-                
+
+
+            //Factor code for any number
+
+            Console.WriteLine("Please inter a number");
+            int x = Convert.ToInt32(Console.ReadLine());
+            int s = x;
+            for (int i = x; i > 1; i--)
+                s *= (i - 1);
+            Console.WriteLine(x + "! = " + s);
+
         }
     }
 }
