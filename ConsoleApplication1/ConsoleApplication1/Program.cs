@@ -204,21 +204,35 @@ namespace ConsoleApplication1
 
             // Test the max number
 
-            Console.WriteLine("Inter The first number");
-            int x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Inter the second number");
-            int y = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Inter the therd number");
-            int z = Convert.ToInt32(Console.ReadLine());
-            int max;
-            if (x > y)
-                max = x;
-            else
-                max = y;
-            if (z > max)
-                max = z;
-            Console.WriteLine("The maximum Number is: " + max);
+            //Console.WriteLine("Inter The first number");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Inter the second number");
+            //int y = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Inter the therd number");
+            //int z = Convert.ToInt32(Console.ReadLine());
+            //int max;
+            //if (x > y)
+            //    max = x;
+            //else
+            //    max = y;
+            //if (z > max)
+            //    max = z;
+            //Console.WriteLine("The maximum Number is: " + max);
 
+
+
+            //the number power
+
+            Console.WriteLine("Please inter a number");
+            int x = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Inter the power Number");
+            int y = Convert.ToInt32(Console.ReadLine());
+            int result = 1;
+            for (int i = 0; i < y; i++)
+            {
+                result *= x;
+            }
+            Console.WriteLine(x + "^" + y + " = " + result);
 
 
         }
