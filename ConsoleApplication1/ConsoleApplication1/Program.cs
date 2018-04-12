@@ -125,30 +125,43 @@ namespace ConsoleApplication1
 
             //Switch statement : build a calculator using switch
 
-            double x, y; char op;
-            Console.WriteLine("Inter the first number : ");
-            x = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Inter the operator like this (+ - * /) : ");
-            op = Convert.ToChar(Console.ReadLine());
-            Console.WriteLine("Inter the second number : ");
-            y = Convert.ToDouble(Console.ReadLine());
-            switch (op)
+            //double x, y; char op;
+            //Console.WriteLine("Inter the first number : ");
+            //x = Convert.ToDouble(Console.ReadLine());
+            //Console.WriteLine("Inter the operator like this (+ - * /) : ");
+            //op = Convert.ToChar(Console.ReadLine());
+            //Console.WriteLine("Inter the second number : ");
+            //y = Convert.ToDouble(Console.ReadLine());
+            //switch (op)
+            //{
+            //    case '+': Console.WriteLine("The result is : " + (x + y));
+            //        break;
+            //    case '-': Console.WriteLine("The result is : " + (x - y));
+            //        break;
+            //    case '*': Console.WriteLine("The result is : " + (x * y));
+            //        break;
+            //    case '/': if (y != 0)
+            //            Console.WriteLine("The result is : " + (x / y));
+            //        else
+            //            Console.WriteLine("You Dividing on Zero !");
+            //        break;
+            //    default:
+            //        Console.WriteLine("The operation is wrong ..");
+            //        break;
+            //}
+
+
+            // Total squares of numbers
+
+            Console.WriteLine("Inter your number : ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            int n = 0;
+            for (int i = 1; i <= x; i++)
             {
-                case '+': Console.WriteLine("The result is : " + (x + y));
-                    break;
-                case '-': Console.WriteLine("The result is : " + (x - y));
-                    break;
-                case '*': Console.WriteLine("The result is : " + (x * y));
-                    break;
-                case '/': if (y != 0)
-                        Console.WriteLine("The result is : " + (x / y));
-                    else
-                        Console.WriteLine("You Dividing on Zero !");
-                    break;
-                default:
-                    Console.WriteLine("The operation is wrong ..");
-                    break;
+                n += (i * i);
             }
+            Console.WriteLine("The total squares of number " + x + " is : " + n);
+
 
 
 
