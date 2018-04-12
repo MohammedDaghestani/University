@@ -65,6 +65,53 @@ namespace ConsoleApplication1
                 Console.WriteLine(b[i]);
             }
             Console.WriteLine();
+
+            // Print The main diameter
+            Console.WriteLine("The main diameter is : \n");
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    if (i == j)
+                        Console.Write(a[i, j]);
+                    else
+                        Console.Write("\t");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+
+            // Elements located above the main diameter
+
+            Console.WriteLine("Elements located above the main diameter : \n");
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    if (i < j)
+                        Console.Write(a[i, j]+"\t");
+                    else
+                        Console.Write("\t");
+                }
+                Console.WriteLine();
+
+            }
+            // Elements located under the main diameter
+
+            Console.WriteLine("Elements located under the main diameter : \n");
+
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    if (i > j)
+                        Console.Write(a[i, j] + "\t");
+                    else
+                        Console.Write("\t");
+                }
+                Console.WriteLine("\n");
+            }
+                
         }
     }
 }
