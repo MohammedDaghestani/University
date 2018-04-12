@@ -153,17 +153,30 @@ namespace ConsoleApplication1
 
             // Total squares of numbers
 
-            Console.WriteLine("Inter your number : ");
+            //Console.WriteLine("Inter your number : ");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //int n = 0;
+            //for (int i = 1; i <= x; i++)
+            //{
+            //    n += (i * i);
+            //}
+            //Console.WriteLine("The total squares of number " + x + " is : " + n);
+
+
+            //range for result
+
+            Console.WriteLine("Please write your score here : ");
             int x = Convert.ToInt32(Console.ReadLine());
-            int n = 0;
-            for (int i = 1; i <= x; i++)
-            {
-                n += (i * i);
-            }
-            Console.WriteLine("The total squares of number " + x + " is : " + n);
-
-
-
+            if (x < 55)
+                Console.WriteLine("Failed");
+            else if (x < 65)
+                Console.WriteLine("Accepted");
+            else if (x < 75)
+                Console.WriteLine("Good");
+            else if (x < 85)
+                Console.WriteLine("Very Good");
+            else if (x < 95)
+                Console.WriteLine("Oner");
 
         }
     }
