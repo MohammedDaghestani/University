@@ -237,24 +237,53 @@ namespace ConsoleApplication1
 
             // Selection sort:
 
-            Console.WriteLine("Please enter the array size : \n");
+            //Console.WriteLine("Please enter the array size : \n");
+            //int size = Convert.ToInt32(Console.ReadLine());
+            //int[] a = new int[size];
+            //Console.WriteLine("Please enter the array items : \n");
+            //for (int i = 0; i < a.Length; i++)
+            //{
+            //    a[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //for (int i = 0; i < a.Length - 1; i++)
+            //{
+            //    for (int j = i + 1; j < a.Length; j++)
+            //    {
+            //        if (a[i]>a[j])
+            //        {
+            //            int temp = a[i];
+            //            a[i] = a[j];
+            //            a[j] = temp;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine("The result is : \n");
+            //for (int i = 0; i < a.Length; i++)
+            //{
+            //    Console.WriteLine(a[i]);
+            //}
+
+
+            //Bubble sort :
+
+            Console.WriteLine("Please enter array size : ");
             int size = Convert.ToInt32(Console.ReadLine());
             int[] a = new int[size];
-            Console.WriteLine("Please enter the array items : \n");
+            Console.WriteLine("Now Enter the items of array : \n");
             for (int i = 0; i < a.Length; i++)
             {
                 a[i] = Convert.ToInt32(Console.ReadLine());
             }
-            
-            for (int i = 0; i < a.Length - 1; i++)
+
+            for (int i = 0; i < a.Length; i++)
             {
-                for (int j = i + 1; j < a.Length; j++)
+                for (int j = 0; j < a.Length - 1; j++)
                 {
-                    if (a[i]>a[j])
+                    if (a[j] > a[j + 1])
                     {
-                        int temp = a[i];
-                        a[i] = a[j];
-                        a[j] = temp;
+                        int temp = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = temp;
                     }
                 }
             }
