@@ -275,9 +275,9 @@ namespace ConsoleApplication1
                 a[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            for (int i = 0; i < a.Length; i++)
+            for (int i = 0; i < a.Length - 1; i++)
             {
-                for (int j = 0; j < a.Length - 1; j++)
+                for (int j = 0; j < a.Length - 1 - i; j++)
                 {
                     if (a[j] > a[j + 1])
                     {
