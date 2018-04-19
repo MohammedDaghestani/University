@@ -223,17 +223,46 @@ namespace ConsoleApplication1
 
             //the number power
 
-            Console.WriteLine("Please inter a number");
-            int x = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Inter the power Number");
-            int y = Convert.ToInt32(Console.ReadLine());
-            int result = 1;
-            for (int i = 0; i < y; i++)
-            {
-                result *= x;
-            }
-            Console.WriteLine(x + "^" + y + " = " + result);
+            //Console.WriteLine("Please inter a number");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Inter the power Number");
+            //int y = Convert.ToInt32(Console.ReadLine());
+            //int result = 1;
+            //for (int i = 0; i < y; i++)
+            //{
+            //    result *= x;
+            //}
+            //Console.WriteLine(x + "^" + y + " = " + result);
 
+
+            // Selection sort:
+
+            Console.WriteLine("Please enter the array size : \n");
+            int size = Convert.ToInt32(Console.ReadLine());
+            int[] a = new int[size];
+            Console.WriteLine("Please enter the array items : \n");
+            for (int i = 0; i < a.Length; i++)
+            {
+                a[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            
+            for (int i = 0; i < a.Length - 1; i++)
+            {
+                for (int j = i + 1; j < a.Length; j++)
+                {
+                    if (a[i]>a[j])
+                    {
+                        int temp = a[i];
+                        a[i] = a[j];
+                        a[j] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("The result is : \n");
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.WriteLine(a[i]);
+            }
 
         }
     }
