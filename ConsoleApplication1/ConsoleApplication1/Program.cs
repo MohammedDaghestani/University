@@ -266,33 +266,48 @@ namespace ConsoleApplication1
 
             //Bubble sort :
 
-            Console.WriteLine("Please enter array size : ");
-            int size = Convert.ToInt32(Console.ReadLine());
-            int[] a = new int[size];
-            Console.WriteLine("Now Enter the items of array : \n");
+            //Console.WriteLine("Please enter array size : ");
+            //int size = Convert.ToInt32(Console.ReadLine());
+            //int[] a = new int[size];
+            //Console.WriteLine("Now Enter the items of array : \n");
+            //for (int i = 0; i < a.Length; i++)
+            //{
+            //    a[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+
+            //for (int i = 0; i < a.Length - 1; i++)
+            //{
+            //    for (int j = 0; j < a.Length - 1 - i; j++)
+            //    {
+            //        if (a[j] > a[j + 1])
+            //        {
+            //            int temp = a[j];
+            //            a[j] = a[j + 1];
+            //            a[j + 1] = temp;
+            //        }
+            //    }
+            //}
+            //Console.WriteLine("The result is : \n");
+            //for (int i = 0; i < a.Length; i++)
+            //{
+            //    Console.WriteLine(a[i]);
+            //}
+
+            
+            //Test: 
+            Console.WriteLine("Inter the number of lines : ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Inter the number of columns : ");
+            int m = Convert.ToInt32(Console.ReadLine());
+            int[,] a = new int[n, m];
+            Console.WriteLine("Inter the items of array : \n");
             for (int i = 0; i < a.Length; i++)
             {
-                a[i] = Convert.ToInt32(Console.ReadLine());
-            }
-
-            for (int i = 0; i < a.Length - 1; i++)
-            {
-                for (int j = 0; j < a.Length - 1 - i; j++)
+                for (int j = 0; j < a.Length; j++)
                 {
-                    if (a[j] > a[j + 1])
-                    {
-                        int temp = a[j];
-                        a[j] = a[j + 1];
-                        a[j + 1] = temp;
-                    }
+                    a[i, j] = Convert.ToInt32(Console.ReadLine());
                 }
             }
-            Console.WriteLine("The result is : \n");
-            for (int i = 0; i < a.Length; i++)
-            {
-                Console.WriteLine(a[i]);
-            }
-
         }
     }
 }
