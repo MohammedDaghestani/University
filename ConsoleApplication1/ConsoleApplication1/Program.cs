@@ -313,16 +313,35 @@ namespace ConsoleApplication1
 
 
             // Positive or negative number test
-            Console.WriteLine("Please enter a number to test if it positive or negative : ");
-            double x = Convert.ToDouble(Console.ReadLine());
-            if (x>0)
-            {
-                Console.WriteLine("The Number is positive .. !");
-            }
-            else
-            {
-                Console.WriteLine("The number is negative");
-            }
+            //Console.WriteLine("Please enter a number to test if it positive or negative : ");
+            //double x = Convert.ToDouble(Console.ReadLine());
+            //if (x>0)
+            //{
+            //    Console.WriteLine("The Number is positive .. !");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The number is negative");
+            //}
+
+            // The prime number 
+            //for (int c = 0; c < 10; c++)
+            //{
+            //    Console.WriteLine("Enter a number here to test it : ");
+            //    int x = Convert.ToInt32(Console.ReadLine());
+            //    for (int i = 2; i < x; i++)
+            //    {
+            //        if (x % i == 0)
+            //        {
+            //            Console.WriteLine("Not Even");
+            //            break;
+            //        }
+            //        else if (i == (x - 1))
+            //        {
+            //            Console.WriteLine("Even");
+            //        }
+            //    }
+            //}
 
 
 
