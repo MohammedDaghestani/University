@@ -385,35 +385,41 @@ namespace ConsoleApplication1
 
 
             //Switch statement : build a calculator using switch
-            for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("Enter first number : ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Enter the operator :");
-                char op = Convert.ToChar(Console.ReadLine());
-                Console.WriteLine("Enter the second number : ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
-                switch (op)
-                {
-                    case '+': Console.WriteLine(num1 + " + " + num2 + " = " + (num1 + num2));
-                        break;
-                    case '-': Console.WriteLine(num1 + " - " + num2 + " = " + (num1 - num2));
-                        break;
-                    case '*': Console.WriteLine(num1 + " * " + num2 + " = " + (num1 * num2));
-                        break;
-                    case '/': if (num2 != 0)
-                            Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
-                        else
-                            Console.WriteLine("you divid on zero ");
-                        break;
-                    default: Console.WriteLine("Operator is Error");
-                        break;
-                }
-            }
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    Console.WriteLine("Enter first number : ");
+            //    int num1 = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Enter the operator :");
+            //    char op = Convert.ToChar(Console.ReadLine());
+            //    Console.WriteLine("Enter the second number : ");
+            //    int num2 = Convert.ToInt32(Console.ReadLine());
+            //    switch (op)
+            //    {
+            //        case '+': Console.WriteLine(num1 + " + " + num2 + " = " + (num1 + num2));
+            //            break;
+            //        case '-': Console.WriteLine(num1 + " - " + num2 + " = " + (num1 - num2));
+            //            break;
+            //        case '*': Console.WriteLine(num1 + " * " + num2 + " = " + (num1 * num2));
+            //            break;
+            //        case '/': if (num2 != 0)
+            //                Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
+            //            else
+            //                Console.WriteLine("you divid on zero ");
+            //            break;
+            //        default: Console.WriteLine("Operator is Error");
+            //            break;
+            //    }
+            //}
 
 
 
-
+            //Even and odd numbers 
+            Console.WriteLine("Enter the number you want to test it : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
+                Console.WriteLine("The number is EVEN ");
+            else
+                Console.WriteLine("The numbber is ODD");
 
         }
     }
