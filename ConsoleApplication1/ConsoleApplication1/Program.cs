@@ -425,14 +425,30 @@ namespace ConsoleApplication1
 
 
             //Factor code (V2)
-            Console.WriteLine("Enter the number : ");
-            int x = Convert.ToInt32(Console.ReadLine());
-            int result = 1;
-            for (int i = 1; i <= x; i++)
+            //Console.WriteLine("Enter the number : ");
+            //int x = Convert.ToInt32(Console.ReadLine());
+            //int result = 1;
+            //for (int i = 1; i <= x; i++)
+            //{
+            //    result *= i;
+            //}
+            //Console.WriteLine(x + "! = " + result);
+
+
+
+
+            //Greatest common divisor
+            int x, y;
+            x = Convert.ToInt32(Console.ReadLine());
+            y = Convert.ToInt32(Console.ReadLine());
+            while (x != y)
             {
-                result *= i;
+                if (x > y)
+                    x = x - y;
+                else
+                    y = y - x;
             }
-            Console.WriteLine(x + "! = " + result);
+            Console.WriteLine("gcd=" + x);
         }
     }
 }
