@@ -414,13 +414,25 @@ namespace ConsoleApplication1
 
 
             //Even and odd numbers 
-            Console.WriteLine("Enter the number you want to test it : ");
-            int num = Convert.ToInt32(Console.ReadLine());
-            if (num % 2 == 0)
-                Console.WriteLine("The number is EVEN ");
-            else
-                Console.WriteLine("The numbber is ODD");
+            //Console.WriteLine("Enter the number you want to test it : ");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //if (num % 2 == 0)
+            //    Console.WriteLine("The number is EVEN ");
+            //else
+            //    Console.WriteLine("The numbber is ODD");
 
+
+
+
+            //Factor code (V2)
+            Console.WriteLine("Enter the number : ");
+            int x = Convert.ToInt32(Console.ReadLine());
+            int result = 1;
+            for (int i = 1; i <= x; i++)
+            {
+                result *= i;
+            }
+            Console.WriteLine(x + "! = " + result);
         }
     }
 }
