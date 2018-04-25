@@ -295,19 +295,37 @@ namespace ConsoleApplication1
 
             
             //Test: 
-            Console.WriteLine("Inter the number of lines : ");
-            int n = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Inter the number of columns : ");
-            int m = Convert.ToInt32(Console.ReadLine());
-            int[,] a = new int[n, m];
-            Console.WriteLine("Inter the items of array : \n");
-            for (int i = 0; i < a.Length; i++)
+            //Console.WriteLine("Inter the number of lines : ");
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Inter the number of columns : ");
+            //int m = Convert.ToInt32(Console.ReadLine());
+            //int[,] a = new int[n, m];
+            //Console.WriteLine("Inter the items of array : \n");
+            //for (int i = 0; i < a.Length; i++)
+            //{
+            //    for (int j = 0; j < a.Length; j++)
+            //    {
+            //        a[i, j] = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //}
+
+
+
+
+            // Positive or negative number test
+            Console.WriteLine("Please enter a number to test if it positive or negative : ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            if (x>0)
             {
-                for (int j = 0; j < a.Length; j++)
-                {
-                    a[i, j] = Convert.ToInt32(Console.ReadLine());
-                }
+                Console.WriteLine("The Number is positive .. !");
             }
+            else
+            {
+                Console.WriteLine("The number is negative");
+            }
+
+
+
         }
     }
 }
