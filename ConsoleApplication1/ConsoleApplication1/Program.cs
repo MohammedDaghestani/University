@@ -372,16 +372,49 @@ namespace ConsoleApplication1
 
 
             //The number power (V2)
-            Console.WriteLine("Enter the number : ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the power : ");
-            int power = Convert.ToInt32(Console.ReadLine());
-            int result = 1;
-            for (int i = 0; i < power; i++)
+            //Console.WriteLine("Enter the number : ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the power : ");
+            //int power = Convert.ToInt32(Console.ReadLine());
+            //int result = 1;
+            //for (int i = 0; i < power; i++)
+            //{
+            //    result *= number;
+            //}
+            //Console.WriteLine(number + "^" + power + "=" + result);
+
+
+            //Switch statement : build a calculator using switch
+            for (int i = 0; i < 10; i++)
             {
-                result *= number;
+                Console.WriteLine("Enter first number : ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the operator :");
+                char op = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine("Enter the second number : ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
+                switch (op)
+                {
+                    case '+': Console.WriteLine(num1 + " + " + num2 + " = " + (num1 + num2));
+                        break;
+                    case '-': Console.WriteLine(num1 + " - " + num2 + " = " + (num1 - num2));
+                        break;
+                    case '*': Console.WriteLine(num1 + " * " + num2 + " = " + (num1 * num2));
+                        break;
+                    case '/': if (num2 != 0)
+                            Console.WriteLine(num1 + " / " + num2 + " = " + (num1 / num2));
+                        else
+                            Console.WriteLine("you divid on zero ");
+                        break;
+                    default: Console.WriteLine("Operator is Error");
+                        break;
+                }
             }
-            Console.WriteLine(number + "^" + power + "=" + result);
+
+
+
+
+
         }
     }
 }
