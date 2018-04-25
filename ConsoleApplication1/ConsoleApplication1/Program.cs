@@ -345,6 +345,29 @@ namespace ConsoleApplication1
 
 
 
+            //the max number (v2)
+            Console.WriteLine("Enter the first number : ");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the second number : ");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the therd number : ");
+            int c = Convert.ToInt32(Console.ReadLine());
+            int max;
+            if (a > b)
+            {
+                max = a;
+            }
+            else
+                max = b;
+            if (max > c)
+            {
+                Console.WriteLine("The max number is : " + max);
+            }
+            else
+            {
+                Console.WriteLine("The max number is : " + c);
+            }
+
         }
     }
 }
