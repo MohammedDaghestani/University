@@ -346,28 +346,42 @@ namespace ConsoleApplication1
 
 
             //the max number (v2)
-            Console.WriteLine("Enter the first number : ");
-            int a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the second number : ");
-            int b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the therd number : ");
-            int c = Convert.ToInt32(Console.ReadLine());
-            int max;
-            if (a > b)
-            {
-                max = a;
-            }
-            else
-                max = b;
-            if (max > c)
-            {
-                Console.WriteLine("The max number is : " + max);
-            }
-            else
-            {
-                Console.WriteLine("The max number is : " + c);
-            }
+            //Console.WriteLine("Enter the first number : ");
+            //int a = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the second number : ");
+            //int b = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the therd number : ");
+            //int c = Convert.ToInt32(Console.ReadLine());
+            //int max;
+            //if (a > b)
+            //{
+            //    max = a;
+            //}
+            //else
+            //    max = b;
+            //if (max > c)
+            //{
+            //    Console.WriteLine("The max number is : " + max);
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The max number is : " + c);
+            //}
 
+
+
+
+            //The number power (V2)
+            Console.WriteLine("Enter the number : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the power : ");
+            int power = Convert.ToInt32(Console.ReadLine());
+            int result = 1;
+            for (int i = 0; i < power; i++)
+            {
+                result *= number;
+            }
+            Console.WriteLine(number + "^" + power + "=" + result);
         }
     }
 }
